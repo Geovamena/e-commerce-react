@@ -1,0 +1,79 @@
+.side__bar {
+    width: 250px;
+    min-width: 250px;
+
+    /* border: 1px red dashed; */
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 5em 2em;
+    background: var(--bg);
+    transition: .5s;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .1);
+
+}
+
+.hidden__sidebar{
+    margin-left: -260px;
+    transition: .5s;
+}
+
+
+
+.filter__line{
+    border: 0.02px var(--text) solid;
+    margin: 3px 0;
+}
+
+.filter__category > ul{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.filter__category > ul > li{
+    cursor: pointer;
+}
+
+.filter__content{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.filter__content > input{
+    overflow: hidden;
+    max-width: 100px;
+    height: 19px;
+    padding: 0 5px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-right: 0;
+    border: 1px solid var(--text);
+    padding-right: 0;
+    background-color: transparent;
+    color: var(--text);
+}
+
+.filter__content > label{
+    color: var(--text);
+}
+
+.filter__types{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.filter__price > h4, .filter__category > h4{
+    color: var(--principal);
+}
+.filter__category > ul > li{
+    color: var(--text);
+}
+
+.filter__category > ul > li:hover{
+    color: var(--principal);
+    transition: 0.2s;
+}

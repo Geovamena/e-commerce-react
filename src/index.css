@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --principal: #e63946ff;
+  --bg: #ffffff6d;
+  --text: #000000;
+  --button-text: #ffffff;
+  --main-bg: #fff;
+
+  --powder-blue: #a8dadcff;
+  --celadon-blue: #457b9dff;
+  --prussian-blue: #1d3557ff;
+  --reverse:#ffffff; 
+
+}
+
+.App.dark {
+  --principal: #a8dadcff;
+  --bg: #1d3557ff;
+  --text: #ffffff;
+  --button-text: #ffffff;
+  --main-bg: #457b9d;
+  --reverse: #1d3557ff;
+
+  --powder-blue: ;
+  --card-blue: #457b9dff;
+
+  transition: 1s;
+}
+
+li {
+  list-style: none;
+}
+
+h5{
+  color: var(--text)
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--principal);
+  border: solid 2px var(--principal);
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .1);
+  outline: none;
+  text-align: center;
+
+}
+
+button:hover {
+  color: var(--button-text);
+  background-color: var(--principal);
+  transition: 0.2s;
+}
+
+.main {
+  /* border: 1px dashed rebeccapurple; */
+  padding: 4.5em 2em;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+
+}
+
+@media (max-width: 575px) {
+
+  .side__bar, .side__cart{
+    max-width: 250px;
+    position: fixed;
+    background-color: var(--bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 .125rem .70rem rgba(0, 0, 0, 0.5);
+    margin-top: 56px;
+    padding: 2em 2em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    height: calc(100vh - 56px);
+    transition: 1s;
+  }
+
+  .side__cart{
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  ul>.line {
+    display: none;
+  }
+
+  .header__nav ul{
+    gap: 1em;
+  }
+
+  .header__item > .fi-rr-filter{
+    display: flex;
+}
+
+.filter__content > input{
+  width: 50px;
+}
+}

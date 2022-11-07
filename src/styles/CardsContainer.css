@@ -1,0 +1,10 @@
+.cards__container{
+    width: 100%;
+
+    /* border: 1px black dashed; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    transition: 1s;
+}

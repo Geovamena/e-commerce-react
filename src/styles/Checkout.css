@@ -1,0 +1,160 @@
+.checkout__container{
+    width: 100%;
+    height: 100%;
+    /* border: 1px dashed red; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.checkout__card__design{
+    /* border: 1px dashed blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    min-width: 350px;
+}
+
+.card_number{
+    max-width: 100px;
+    overflow: hidden;
+}
+
+.checkout__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px dashed blue; */
+    flex: 1;
+    min-width: 350px;
+
+}
+
+.checkout__card__design > img{
+    width: 300px;
+}
+
+.card__container{
+    width: 300px;
+    position: relative;
+}
+.card__front, .card__back{
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 .125rem .35rem rgba(0, 0, 0, .4);
+
+
+
+}
+
+.card__number{
+    font-weight: 600;
+    position: absolute;
+    width: 220px;
+    /* border: 1px white dashed; */
+    left: 1em;
+    bottom: 2.5em;
+    font-size: 1.3em;
+    color: white;
+}
+
+.card__name{
+    position: absolute;
+    left: 1.4em;
+    bottom: 1.5em;
+    color: white;
+}
+
+.card__date{
+    position: absolute;
+    right: 1.4em;
+    bottom: 1.5em;
+    color: white;
+}
+
+.card__cvv{
+    position: absolute;
+    right: 2.1em;
+    bottom: 4.9em;
+    color: white;
+}
+
+.form__full{
+    height: 500px;
+    width: 350px;
+    /* border: 1px red dashed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+    flex-direction: column;
+}
+
+.form__full > input{
+    height: 25px;
+    width: 215px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.exp__date_container{
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+}
+
+.exp_label{
+    font-size: 0.7em;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.inputs__container{
+    display: flex;
+   gap: 1em;
+    /* border: 1px dashed black; */
+}
+.inputs__container > input{
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 1em 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.exp__container{
+    /* border: 1px dashed darkblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exp__container > .exp_label2, .cvv__container > input{
+    height: 25px;
+    width: 50px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 1em 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.cvv__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__full > button{
+    margin-top: 1em;
+    width: 215px;
+}

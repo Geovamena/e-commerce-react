@@ -1,0 +1,68 @@
+.purchases__container{
+  width: 100%;
+  display: flex;
+  gap: 5em;
+/* border: 1px black dashed; */
+max-height: 90vh;
+gap: 1em;
+position: absolute;
+
+
+}
+
+.purchases__invoice_container{
+  padding: 1em;
+  min-width: 250px;
+  max-height: 100% ;
+  display: flex;
+  gap: 1em;
+  flex-direction: column-reverse;
+  overflow: scroll;
+
+}
+
+.purchases__invoice_details{
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px black dashed; */
+  max-height: 100%;
+  overflow: scroll;
+  gap: 1em;
+}
+
+.purchaseItem{
+  width: 200px;
+  min-height: 100px;
+  border-radius: 0.5em;
+  background-color: var(--principal);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--reverse);
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .4);
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.purchaseItem:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.purchases__full__container{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+}
+
+#purchase__in{
+  width: 300px;
+  height: 100px;
+}
+
+.invoice{
+  padding: 1em 0;
+}

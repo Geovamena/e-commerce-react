@@ -1,0 +1,28 @@
+.product__details_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 3em;
+    /* border: 1px darkblue dashed; */
+}
+.principal__product{
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.principal__product__description{
+    max-width: 450px;
+    text-align: justify;
+    color: var(--text);
+}
+
+.similars__products__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+}
